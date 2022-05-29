@@ -16,9 +16,14 @@ namespace OmronWrapper
             Fleet f1 = new Fleet(1, generalConnection);
             Fleet f2 = new Fleet(2, generalConnection);
             Fleet f3 = new Fleet(3, generalConnection);
+            lTotalFleet.Add(f1);
+            lTotalFleet.Add(f2);
+            lTotalFleet.Add(f3);
+            gatherAllFleets();
+            Console.ReadLine();
         }
 
-        public async void gatherAllFleets()
+        public static async void gatherAllFleets()
         {
             foreach(Fleet f in lTotalFleet)
             {

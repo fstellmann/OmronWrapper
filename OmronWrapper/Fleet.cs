@@ -11,9 +11,10 @@ namespace OmronWrapper
         public ARCLConnection con;
         public int identifier { get; set; }
 
-        public Fleet(int _identifier, ARCLConnection con)
+        public Fleet(int _identifier, ARCLConnection _con)
         {
             identifier = _identifier;
+            con = _con;
         }
     }
 }
